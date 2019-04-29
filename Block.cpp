@@ -13,7 +13,7 @@
 
 #include "Block.h"
 #include <string>
-
+#include <map> 
 
 //constructors
 Block::Block() {

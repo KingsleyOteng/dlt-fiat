@@ -8,9 +8,9 @@
  * File:   WalletUtil.h
  * Author: Kwadwo Oteng-Amoako
  *
- * Created on April 26, 2019, 1:10 PM
+ * Created on April 29, 2019, 7:30am
  */
-
+#pragma once
 #ifndef WALLETUTIL_H
 #define WALLETUTIL_H
 
