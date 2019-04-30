@@ -14,6 +14,10 @@
 #ifndef BLOCK_H
 #define BLOCK_H
 #include <string>
+#include <map>
+#include <vector>
+#include "WalletUtil.h"
+#include "TransactionOutputIO.h"
 
 //using namespace std
 
@@ -25,17 +29,17 @@ public:
     virtual ~Block();
     static std::string newHashSignet;
     static std::string priorHashSignet;
-    static std::vector<Block> blockChain = new std::vector<Block>();
-    static int miningDepth = 0x4;
-    static int minimumTransaction = 0x5;
+    std::vector<Block> blockChain;
+    int miningDepth = 0x4;
+    int minimumTransaction = 0x5;
     // hashmap implementation
     //static HashItem<std::string,TransactionOutputIO> UTXOs = new HashItem<std::string,TransactionOutputIO>();
     
     // perhaps we might use an stl implementation
-    static std::map<std::string, TransactionOutputIO> UTXs_stl = new std::map<std::string, TransactionOutputIO>;
+    std::map<std::string, TransactionOutputIO> UTXs_stl; 
     
-    static WalletUtil WalletA;
-    static WalletUtil WalletB;
+    WalletUtil WalletA;
+    WalletUtil WalletB;
 
     
 private:

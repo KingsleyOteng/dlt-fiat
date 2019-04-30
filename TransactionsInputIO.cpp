@@ -13,12 +13,12 @@
 
 #include "TransactionsInputIO.h"
 
-TransactionsIO::TransactionsIO() {
+TransactionsInputIO::TransactionsInputIO() {
 }
 
-TransactionsIO::TransactionsIO(const TransactionsIO& orig) {
+TransactionsInputIO::TransactionsInputIO(const TransactionsInputIO& orig) {
 }
 
-TransactionsIO::~TransactionsIO() {
+TransactionsInputIO::~TransactionsInputIO() {
 }
 

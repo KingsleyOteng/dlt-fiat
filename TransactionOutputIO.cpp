@@ -12,6 +12,7 @@
  */
 
 #include "TransactionOutputIO.h"
+#include <string>
 
 TransactionOutputIO::TransactionOutputIO() {
 }

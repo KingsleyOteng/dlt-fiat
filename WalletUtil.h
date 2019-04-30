@@ -13,12 +13,18 @@
 #pragma once
 #ifndef WALLETUTIL_H
 #define WALLETUTIL_H
+#include "TransactionOutputIO.h"
+#include <string>
+#include <map>
 
 class WalletUtil {
 public:
     WalletUtil();
     WalletUtil(const WalletUtil& orig);
     virtual ~WalletUtil();
+    
+    std::map<std::string, TransactionOutputIO> UTXOs;
+   
 private:
 
 };
