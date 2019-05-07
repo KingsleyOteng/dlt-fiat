@@ -33,7 +33,7 @@ public:
     std::vector<TransactionsInputIO> ledgerOfInputs;
     std::vector<TransactionOutputIO> ledgerOfOutputs; 
     
-    int sequence = 0; 
+    static int sequence = 0; 
         
 private:
 

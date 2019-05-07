@@ -29,17 +29,23 @@ public:
     virtual ~Block();
     static std::string newHashSignet;
     static std::string priorHashSignet;
+    static std::string merkleRoot;
     std::vector<Block> blockChain;
-    int miningDepth = 0x4;
-    int minimumTransaction = 0x5;
+    std::vector<TransactionUtil> transactions;
+    static int miningDepth = 0x4;
+    static int minimumTransaction = 0x5;
     // hashmap implementation
     //static HashItem<std::string,TransactionOutputIO> UTXOs = new HashItem<std::string,TransactionOutputIO>();
     
     // perhaps we might use an stl implementation
-    std::map<std::string, TransactionOutputIO> UTXs_stl; 
+    static std::map<std::string, TransactionOutputIO> UTXs_stl; 
+    static std::string message;
+    static long timeStamp;
+    static int nonce;
     
     WalletUtil WalletA;
     WalletUtil WalletB;
+   
 
     
 private:
