@@ -24,6 +24,19 @@ public:
     TransactionUtil(const TransactionUtil& orig);
     virtual ~TransactionUtil();
     
+    float TransactionUtil::getInputsValue();
+    
+    //outputs method
+    float TransactionUtil::getOutputsValue();
+
+    std::string TransactionUtil::buildNewHash();
+    
+    void TransactionUtil::generateSignature() {};
+    
+    bool TransactionUtil::verifySignature();
+    
+    bool TransactionUtil::processTransaction();
+    
     std::string transactionId;
     // PublicKey senderAddress;
     // PublicKey recipientAddress;

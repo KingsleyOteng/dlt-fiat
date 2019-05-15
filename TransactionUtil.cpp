@@ -13,12 +13,21 @@
 
 #include "TransactionUtil.h"
 
-TransactionUtil::TransactionUtil() {
-}
+TransactionUtil::TransactionUtil() {}
 
-TransactionUtil::TransactionUtil(const TransactionUtil& orig) {
-}
+TransactionUtil::TransactionUtil(const TransactionUtil& orig) {}
 
-TransactionUtil::~TransactionUtil() {
-}
+TransactionUtil::~TransactionUtil() {}
+
+float TransactionUtil::getInputsValue() {}
+    
+float TransactionUtil::getOutputsValue() {}
+       
+std::string TransactionUtil::buildNewHash() {}
+    
+void TransactionUtil::generateSignature() {}
+    
+bool TransactionUtil::verifySignature() {}
+    
+bool TransactionUtil::processTransaction() {}
 
