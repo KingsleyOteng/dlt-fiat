@@ -45,7 +45,17 @@ public:
     
     WalletUtil WalletA;
     WalletUtil WalletB;
+    
+    static int minimumTransaction = 0x5;
    
+    Block::Block(std::string data, std::string previousHash);
+    final std::string Block::calculatedhash();
+    static bool Block::isHashCodeCheckValid();
+    void Block::miner(int miningDepth);
+    
+     
+    
+    
 
     
 private:

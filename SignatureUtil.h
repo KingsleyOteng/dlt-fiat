@@ -20,6 +20,14 @@ public:
     SignatureUtil();
     SignatureUtil(const SignatureUtil& orig);
     virtual ~SignatureUtil();
+    
+    static std::string applySha256(std::string message);
+    static std::string getStringFromKey(std::string keyLL);
+    static byte applyECDSASig(std::string privateKeyLL, std::string inputLL);
+    static bool verifyECDSASig(std::string publicKey, std::string message, byte signet);
+    static std::string getMerkleRoot(std::string transactionsLL);
+    
+    
 private:
 
 };
